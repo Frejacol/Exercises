@@ -29,7 +29,15 @@ function scissorsClicked() {
 }
 
 function makeChoice() {
-  computerChoice = "scissors";
+  computerChoice = Math.ceil(Math.random() * 3);
+
+  if (computerChoice === 1) {
+    computerChoice = "rock";
+  } else if (computerChoice === 2) {
+    computerChoice = "paper";
+  } else if (computerChoice === 3) {
+    computerChoice = "scissors";
+  }
   countDown();
 }
 
@@ -53,6 +61,24 @@ function showChoice() {
 }
 
 function showResult() {
-  console.log("Player chose: ", playerChoice);
-  console.log("Computer chose: ", computerChoice);
+  const beats = {
+    rock: "scissors",
+    paper: "rock",
+    scissors: "paper",
+  };
+
+  if (playerChoice === computerChoice) {
+    document.getElementById("draw").classList.remove("hidden");
+  } else if (beats[playerChoice] === computerChoice) {
+    document.getElementById("win").classList.remove("hidden");
+  } else {
+    document.getElementById("lose").classList.remove("hidden");
+  }
+  setTimeout(hideResult, 3000);
+}
+
+function hideResult() {
+  document.getElementById("win").classList.add("hidden");
+  document.getElementById("lose").classList.add("hidden");
+  document.getElementById("draw").classList.add("hidden");
 }
