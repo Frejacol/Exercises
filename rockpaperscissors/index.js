@@ -12,23 +12,21 @@ const scissorsBtn = document.querySelector(".scissors");
 
 rockBtn.addEventListener("click", rockClicked);
 function rockClicked() {
-  playerChoice = "rock";
-  makeChoice();
+  makeChoice("rock");
 }
 
 paperBtn.addEventListener("click", paperClicked);
 function paperClicked() {
-  playerChoice = "paper";
-  makeChoice();
+  makeChoice("paper");
 }
 
 scissorsBtn.addEventListener("click", scissorsClicked);
 function scissorsClicked() {
-  playerChoice = "scissors";
-  makeChoice();
+  makeChoice("scissors");
 }
 
-function makeChoice() {
+function makeChoice(choice) {
+  playerChoice = choice;
   computerChoice = Math.ceil(Math.random() * 3);
 
   if (computerChoice === 1) {
@@ -74,7 +72,7 @@ function showResult() {
   } else {
     document.getElementById("lose").classList.remove("hidden");
   }
-  setTimeout(hideResult, 3000);
+  setTimeout(hideResult, 1500);
 }
 
 function hideResult() {
