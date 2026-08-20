@@ -1,5 +1,9 @@
-function BeregnMoms(beloeb, moms) {
-  console.log("Uderegnet beløb: " + beloeb * moms);
-}
+const moms = 0.75;
+const beregn = document.getElementById("beregn");
 
-BeregnMoms(309, 0.75);
+beregn.addEventListener("click", BeregnMoms);
+
+function BeregnMoms() {
+  const beloeb = Number(document.getElementById("beloeb").value);
+  document.querySelector("#result").textContent = "Uderegnet beløb: " + beloeb * moms;
+}

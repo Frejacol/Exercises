@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momsberegner</title>
     <script src="js/moms.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Momsberegner</h1>
+    <div class="moms-container">
+      <h1>Momsberegner</h1>
+      <div class="input-container">
+        <input type="number" id="beloeb" placeholder="Indtast beløb" />
+        <button id="beregn">Beregn moms</button>
+      </div>
+      <p>Moms i Danmark: 25%</p>
+      <p id="result"></p>
+    </div>
   </body>
 </html>
