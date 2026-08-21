@@ -1,10 +1,6 @@
-"use strict";
+import { generateRandomNumber } from "../../utils_lib/utils_lib.js";
 
-function generateRandomNumber() {
-  return Math.ceil(Math.random() * 100);
-}
-
-let secretNumber = generateRandomNumber();
+let secretNumber = generateRandomNumber(100);
 
 function checkGuess() {
   let guess = Number(document.querySelector(".guess-input").value);
