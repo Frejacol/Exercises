@@ -1,5 +1,3 @@
-import { generateRandomNumber } from "../../utils_lib/utils_lib.js";
-
 const list = document.querySelector("ul");
 const valueArr = [];
 
