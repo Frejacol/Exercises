@@ -6,7 +6,7 @@ const valueArr = [];
 setInterval(generateColumns, 500);
 
 function generateColumns() {
-  let height = generateRandomNumber(100);
+  let height = Math.floor(Math.random() * 101);
   valueArr.push(height);
 
   const li = document.createElement("li");
