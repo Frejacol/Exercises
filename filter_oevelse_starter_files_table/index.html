@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="filters">
+        <button id="all" data-filter="all" class="active">All Veicles</button>
+        <button id="isElectric" data-filter="isElectric">Veichle is electric</button>
+        <button id="moreThanTwoSeats" data-filter="hasTwoSeatsOrMore">Veichle has more than 2 seats</button>
+        <button id="isElectricJonas" data-filter="isElectricJonas">Veichle is electric and owned by Jonas</button>
+        <button id="ryebreadMoreThanTwo" data-filter="ryebreadTwoOrMore">Veichle is driven by ryebread and has more than 2 seats</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Fuel</th>
+            <th>Passengers</th>
+            <th>Stops</th>
+            <th>Owned By</th>
+            <th>Electric</th>
+            <th>Tandem</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
