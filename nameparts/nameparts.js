@@ -1,10 +1,18 @@
 const fullName = "Freja Flinck Colsted";
 const longName = "Albus Percival Wulfric Brian Dumbledore";
 
-console.log(`First name: ${fullName.substring(0, 5)}`);
-console.log(`Middle name: ${fullName.substring(6, 12)}`);
-console.log(`Last name: ${fullName.substring(13)}`);
+const firstName = `${fullName.substring(0, fullName.indexOf(" "))}`;
+const middleName = `${fullName.substring(fullName.indexOf(" ") + 1, fullName.lastIndexOf(" "))}`;
+const lastName = `${fullName.substring(fullName.lastIndexOf(" ") + 1)}`;
 
-console.log(`First name: ${longName.substring(0, 5)}`);
-console.log(`Middle name: ${longName.substring(6, 28)}`);
-console.log(`Last name: ${longName.substring(29)}`);
+const longFirstName = `${longName.substring(0, longName.indexOf(" "))}`;
+const longMiddleName = `${longName.substring(longName.indexOf(" ") + 1, longName.lastIndexOf(" "))}`;
+const longLastName = `${longName.substring(longName.lastIndexOf(" ") + 1)}`;
+
+console.log(`First name: ${longFirstName}`);
+console.log(`Middle name: ${longMiddleName}`);
+console.log(`Last name: ${longLastName}`);
+
+console.log(`First name: ${firstName}`);
+console.log(`Middle name: ${middleName}`);
+console.log(`Last name: ${lastName}`);
