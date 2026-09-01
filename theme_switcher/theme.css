@@ -1,0 +1,20 @@
+[data-theme="hawaii"] {
+  --bg: #0078a7;
+  --header: #da2526;
+  --footer: #33cc99;
+  --text: #fff;
+}
+
+[data-theme="dark"] {
+  --bg: #0b2a4a;
+  --header: #06162b;
+  --footer: #06162b;
+  --text: #f2e9d8;
+}
+
+[data-theme="light"] {
+  --bg: #f2e9d8;
+  --header: #dbd2c0;
+  --footer: #dbd2c0;
+  --text: #06162b;
+}
