@@ -1,0 +1,30 @@
+.good {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 5px;
+}
+
+dialog {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: auto;
+  padding: 2em 2em;
+  background-color: #f2f2f2;
+  box-shadow: 10px 10px 10px 0px #ccc;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  #close {
+    align-self: flex-end;
+    max-width: 15%;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  p {
+    margin: 2em 0;
+  }
+}
